@@ -1,7 +1,5 @@
 package com.liucheng.controller;
 
-import java.io.UnsupportedEncodingException;
-import java.security.NoSuchAlgorithmException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -60,31 +58,30 @@ public class CustomerController {
 	public String saveCustomer(@RequestParam("customer_name") String customer_name,
 			@RequestParam("customer_password") String customer_password,
 			@RequestParam("customer_sex") Integer customer_sex, @RequestParam("customer_phone") String customer_phone,
-			HttpServletResponse response,HttpServletRequest request) throws Exception, Exception {
+			HttpServletResponse response, HttpServletRequest request) throws Exception, Exception {
 		Customer c = new Customer();
 		c.setCustomer_name(customer_name);
 		c.setCustomer_password(customer_password);
 		c.setCustomer_phone(customer_phone);
 		c.setCustomer_sex(customer_sex);
-		if(cs.saveCustomer(c)){
+		if (cs.saveCustomer(c)) {
 			request.getSession().setAttribute("customer_name", customer_name);
-		}else{
+		} else {
 			return "redirect:/error.jsp";
 		}
 		return "redirect:/index.jsp";
 	}
-	
+
 	@RequestMapping("/logout")
 	public String logout(HttpServletRequest request) {
 		request.getSession().invalidate();
 		return "redirect:/index.jsp";
 	}
-	
+
 	@RequestMapping("/login")
-	public String login(@RequestParam("customer_name")String customer_name,
-			@RequestParam("customer_password")String customer_password,
-			HttpServletRequest request) throws Exception{
-		if(cs.getCustomerByNameAndPwd(customer_name, customer_password)){
+	public String login(@RequestParam("customer_name") String customer_name,
+			@RequestParam("customer_password") String customer_password, HttpServletRequest request) throws Exception {
+		if (cs.getCustomerByNameAndPwd(customer_name, customer_password)) {
 			request.getSession().setAttribute("customer_name", customer_name);
 			return "redirect:/index.jsp";
 		}
