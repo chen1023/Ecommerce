@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+.container{
+	width:1000px;
+	margin:auto 170px;
+}
+
+.float_left{
+	float:left;	
+}
+
+.float_right{
+	float:right;	
+}
+
+.clear{
+	clear:both;	
+}
+
+.clear_right{
+	clear:right;
+}
+
+.clear_left{
+	clear:left;
+}
+
+.smallSize_lineHight{
+	font-size:12px;
+	line-height:23px;
+	color:#36F;	
+}
+
+.bottom_index{
+	text-align:center;
+	line-height:5px;
+	font-size:small;	
+}
+
+.table_back{
+	background-image:url(taobao/images/table_back.gif);
+	background-repeat:no-repeat;
+	margin-bottom:16px;
+}
+
+.table_back_padding{
+	padding-top:25px;
+	padding-left:5px;
+}
+
+.portai_index{
+	background-image:url(taobao/images/portal_bg.jpg);
+	background-repeat:no-repeat;
+	padding:5px;
+}
+
+.type_back{
+	background-image:url(taobao/images/type_back.jpg);
+	background-repeat:no-repeat;
+	color:#36F;
+	padding-top:40px;
+	padding-left:10px;
+	padding-bottom:10px;
+	line-height:20px;
+	letter-spacing:0;
+}
+
+.type_back_item{
+	width:300px;
+	margin-bottom:3px;
+	padding-top:10px;
+	padding-left:7px;
+	padding-right:5px;
+}
+
+.type_back_item_light_border{
+	border-left:#F93 dashed;
+	border-left-width:thin;
+}
+
+.type_back_item_color{
+	background:#EEEEEE;	
+}
+
+.commoditys_detailInfo_head{
+	background-image:url(img/topbar_style1_bk.gif);
+	background-repeat:repeat-x;
+	text-align:center;
+	font-size:large;
+	font-weight:bold;
+	padding-top:15px;
+	padding-bottom:5px;
+	border-bottom-style:solid;
+	border-bottom-width:thin;
+	border-bottom-color:#000000;
+	//border-bottom-color:#BFD8E3;
+}
+
+
+.commoditys_detailInfo_leftImg{
+	padding-top:70px;
+	padding-bottom:70px;
+	padding-right:100px;
+	width:266px;
+	height:266px;	
+}
+
+.buy_blue_held{
+	background-image:url(taobao/shopping/images/buy_headpic1.gif);
+	background-repeat:repeat-x;
+	font-weight:bold;
+	font-size:large;
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom:4px;
+}
+
+.buy_blue_table_head_left{
+	background:url(taobao/shopping/images/choice_t_left.gif) left no-repeat;
+}
+.buy_blue_table_head_center{
+	background:url(taobao/shopping/images/choice_t_center.gif) center repeat-x;
+	margin-left:7px;
+	margin-right:7px;
+	padding-left:15px;
+	padding-top:8px;
+	padding-bottom:10px;
+}
+
+.buy_blue_table_head_right{
+	background:url(taobao/shopping/images/choice_t_right.gif) right no-repeat;
+}
+
+.center_line{
+	background:url(taobao/client_center/images/blue_line.gif) bottom repeat-x;
+	padding-bottom:20px;
+	width:900px;	
+}
+
+.center_left{
+	background:url(taobao/client_center/images/customer.jpg) no-repeat;
+	padding-top:200px;
+	padding-left:10px;
+	padding-bottom:100px;
+}
+
+.center_rap_line{
+	background:url(taobao/client_center/images/reg_line.jpg) bottom repeat-x;
+	padding-bottom:30px;
+	width:500px;
+	font-size:large;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
